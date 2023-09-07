@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D;
 using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
     public float speed = 3f;
+    public Rigidbody2D rb;
+
+    private Vector2 dir;
+
+    public bool hasKey = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
